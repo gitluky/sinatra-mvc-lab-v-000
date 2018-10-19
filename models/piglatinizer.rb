@@ -29,9 +29,14 @@ class PigLatinizer
   def convert_consonant_word(word)
     letters = word.split('')
     letters.each do |letter|
-      consonant = letters.shift
-      letters.push(consonant)
-
+      if @@vowel.include?(letter)
+        break
+      else
+        consonant = letters.shift
+        letters.push(consonant)
+      end
+      @piglatinized_words << letters.join('')
+    end
   end
 
 
