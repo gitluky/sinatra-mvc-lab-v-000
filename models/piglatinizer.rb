@@ -4,15 +4,16 @@ class PigLatinizer
 
   def initialize(user_input)
     @user_input = user_input
+    @piglatinized_array = []
   end
 
   def piglatinize
-
     @user_input.downcase.split(" ")
     @user_input.each do |word|
-      @starting_consonants = []
-      letter_array = word.split
-      letter_array.each do |letter|
+    letter_array = word.split
+    letter_array.each do |letter|
+      if @@vowels.include(letter)
+        add_word = word+'way'
 
   end
 
