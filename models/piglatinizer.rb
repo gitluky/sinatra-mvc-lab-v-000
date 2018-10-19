@@ -6,35 +6,35 @@ class PigLatinizer
 
     @user_input = user_input
     @piglatinized_words = []
+
   end
 
-  def piglatinize
-    @piglatin_words = []
-    @user_input.split(" ")
-    @user_input.each do |word|
-      letter_array = word.split
-      consonants = []
-      letter_array.each do |letter|
-        if @@vowels.include(letter)
-          new_word = word+"way"
-          @piglatin_word
-        else
-          consonants << letter
-
-        end
-
-      end
-      @piglatin_words << piglatin_word
-    end
-    @piglatin_words.join(" ")
+  def piglatinze
+    @user_input.split(' ').each do |word|
+      if starts_with_vowel?(word)
+        piglatin_word = word+"way"
+        @piglatinized_words << piglatin_word
+      else
+        
+        
+    
+    
   end
 
+  def starts_with_vowel?(word)
+    letters = word.split('')
+    @@vowels.include?(letter[0])
+  end
+
+  def convert_word(word)
+    letters = word.split('')
+    letters.each do |letter|
+      consonant = letters.shift
+      letters.push(consonant)
+      
+  end
+
+
+
+  
 end
-
-def start_with_vowel?
-
-
-
-end
-
-def start_with_consonant?
