@@ -15,14 +15,14 @@ class PigLatinizer
       consonants = []
       letter_array.each do |letter|
         if @@vowels.include(letter)
-          add_word = word+'way'
+          piglatin_word = word+'way'
         else
           consonants << letter
 
         end
 
       end
-      @piglatin_words << add_word
+      @piglatin_words << piglatin_word
     end
     @piglatin_words.join(" ")
   end
