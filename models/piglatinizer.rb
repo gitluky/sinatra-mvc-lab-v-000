@@ -8,7 +8,7 @@ class PigLatinizer
 
   def piglatinize
 
-    @user_input.split(" ")
+    @user_input.downcase.split(" ")
     @user_input.each do |word|
       @starting_consonants = []
       letter_array = word.split
