@@ -15,10 +15,8 @@ class PigLatinizer
         piglatin_word = word+"way"
         @piglatinized_words << piglatin_word
       else
-
-
-
-
+        convert_consonant_word(word)
+      end
   end
 
   def starts_with_vowel?(word)
