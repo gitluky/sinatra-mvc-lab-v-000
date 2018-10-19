@@ -17,7 +17,7 @@ class PigLatinizer
       else
         convert_consonant_word(word)
       end
-      @piglatinized_words
+      @piglatinized_words.join(' ')
   end
 
   def starts_with_vowel?(word)
