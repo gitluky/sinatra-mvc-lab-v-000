@@ -24,7 +24,7 @@ class PigLatinizer
       end
       @piglatin_words << add_word
     end
-
+    @piglatin_words.join(" ")
   end
 
 end
