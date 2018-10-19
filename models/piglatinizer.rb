@@ -1,15 +1,15 @@
 class PigLatinizer
-  attr_accessor :user_input, :piglatinized_array
+  attr_accessor :user_input, :piglatinized_words
   @@vowels = ["a","e","i","o","u","A","E","I","O","U"]
 
   def initialize(user_input)
     @user_input = user_input
-    @piglatinized_array = []
+    @piglatinized_words = []
   end
 
   def piglatinize
     @piglatin_words = []
-    @user_input.downcase.split(" ")
+    @user_input.split(" ")
     @user_input.each do |word|
       letter_array = word.split
       consonants = []
