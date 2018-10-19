@@ -25,7 +25,7 @@ class PigLatinizer
     @@vowels.include?(letters[0])
   end
 
-  def convert_vowel_word
+  def convert_vowel_word(word)
     piglatin_word = word + 'way'
     @piglatinized_words << piglatin_word
   end
