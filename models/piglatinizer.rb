@@ -15,10 +15,10 @@ class PigLatinizer
         piglatin_word = word+"way"
         @piglatinized_words << piglatin_word
       else
-        
-        
-    
-    
+
+
+
+
   end
 
   def starts_with_vowel?(word)
@@ -26,15 +26,15 @@ class PigLatinizer
     @@vowels.include?(letter[0])
   end
 
-  def convert_word(word)
+  def starts_with_consonant(word)
     letters = word.split('')
     letters.each do |letter|
       consonant = letters.shift
       letters.push(consonant)
-      
+
   end
 
 
 
-  
+
 end
