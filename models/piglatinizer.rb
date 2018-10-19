@@ -33,7 +33,7 @@ class PigLatinizer
   def convert_consonant_word(word)
     letters = word.split('')
     letters.each do |letter|
-      if @@vowel.include?(letter)
+      if @@vowels.include?(letter)
         break
       else
         consonant = letters.shift
