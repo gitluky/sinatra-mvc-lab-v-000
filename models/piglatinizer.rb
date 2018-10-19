@@ -8,7 +8,7 @@ class PigLatinizer
   end
 
   def piglatinize
-    @new_words = []
+    @piglatin_words = []
     @user_input.downcase.split(" ")
     @user_input.each do |word|
       letter_array = word.split
@@ -22,7 +22,7 @@ class PigLatinizer
         end
 
       end
-
+      @piglatin_words << add_word
     end
 
   end
