@@ -8,7 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-
+    @user_input = params[:user_input]
     erb :piglatin
   end
 
