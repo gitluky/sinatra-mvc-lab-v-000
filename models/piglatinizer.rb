@@ -3,6 +3,7 @@ class PigLatinizer
   @@vowels = ["a","e","i","o","u","A","E","I","O","U"]
 
   def initialize(user_input)
+
     @user_input = user_input
     @piglatinized_words = []
   end
@@ -15,7 +16,8 @@ class PigLatinizer
       consonants = []
       letter_array.each do |letter|
         if @@vowels.include(letter)
-          piglatin_word = word+'way'
+          new_word = word+"way"
+          @piglatin_word
         else
           consonants << letter
 
@@ -28,3 +30,11 @@ class PigLatinizer
   end
 
 end
+
+def start_with_vowel?
+
+
+
+end
+
+def start_with_consonant?
