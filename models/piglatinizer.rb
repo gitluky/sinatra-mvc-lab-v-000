@@ -22,7 +22,7 @@ class PigLatinizer
 
   def starts_with_vowel?(word)
     letters = word.split('')
-    @@vowels.include?(letter[0])
+    @@vowels.include?(letters[0])
   end
 
   def convert_vowel_word
