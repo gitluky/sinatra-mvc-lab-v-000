@@ -12,7 +12,7 @@ class PigLatinizer
   def piglatinze
     @user_input.split(' ').each do |word|
       if starts_with_vowel?(word)
-        piglatin_word = word+"way"
+        piglatin_word = word+'way'
         @piglatinized_words << piglatin_word
       else
         convert_consonant_word(word)
@@ -34,6 +34,7 @@ class PigLatinizer
         consonant = letters.shift
         letters.push(consonant)
       end
+      letters.push('a','y')
       @piglatinized_words << letters.join('')
     end
   end
