@@ -26,7 +26,7 @@ class PigLatinizer
     @@vowels.include?(letter[0])
   end
 
-  def starts_with_consonant(word)
+  def convert_consonant_word(word)
     letters = word.split('')
     letters.each do |letter|
       consonant = letters.shift
