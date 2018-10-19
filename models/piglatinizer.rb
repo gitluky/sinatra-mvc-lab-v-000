@@ -21,7 +21,7 @@ class PigLatinizer
 
   end
 
-  def starts_with_vowel?(word)
+  def starts_with_vowel(word)
     letters = word.split('')
     @@vowels.include?(letter[0])
   end
