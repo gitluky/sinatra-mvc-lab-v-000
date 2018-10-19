@@ -12,7 +12,7 @@ class PigLatinizer
   def piglatinze
     @user_input.split(' ').each do |word|
       if starts_with_vowel?(word)
-
+        convert_vowel_word(word)
       else
         convert_consonant_word(word)
       end
